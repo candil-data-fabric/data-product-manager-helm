@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/candil-data-fabric/data-product-manager
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "2.1.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -18,31 +18,25 @@ envVars:
   - name: KUBERNETES_NAMESPACE
     value: "default"
   - name: HELM_REPO_NAME
-    value: ""
+    value: "morph-kgc-helm"
   - name: HELM_REPO_URL
-    value: ""
-  - name: HELM_REPO_AUTH_SECRET
-    value: ""
-  - name: HELM_REPO_AUTH_USERNAME
-    value: ""
-  - name: HELM_REPO_AUTH_TOKEN
-    value: ""
+    value: "https://candil-data-fabric.github.io/morph-kgc-helm"
   - name: KAFKA_BROKER
-    value: ""
+    value: "data-fabric-kafka.default.svc.cluster.local:9092"
   - name: KAFKA_TOPIC
-    value: ""
+    value: "knowledge-graphs"
   # - name: KAFKA_GROUP_ID
   #   value: 
   - name: MORPH_RELEASE_NAME
     value: "morph-kgc"
   - name: MORPH_IMAGE_REPOSITORY
-    value: ""
+    value: "ghcr.io/candil-data-fabric/morph-kgc"
   - name: MORPH_CHART_NAME
     value: "morph-kgc"
   - name: MORPH_CHART_VERSION
-    value: ""
+    value: "1.4.0"
   - name: SEMANTIC_ANNOTATOR_URI
-    value: ""
+    value: "http://data-fabric-semantic-annotator-streamer.default.svc.cluster.local:8080/"
   - name: SEMANTIC_ANNOTATOR_ERROR_TOPIC_ENABLED
     value: "\"False\""
   - name: SEMANTIC_ANNOTATOR_INPUT_MONITOR_TOPIC_ENABLED
@@ -50,15 +44,15 @@ envVars:
   - name: SEMANTIC_ANNOTATOR_OUTPUT_MONITOR_TOPIC_ENABLED
     value: "\"False\""
   - name: SEMANTIC_ANNOTATOR_ERROR_TOPIC
-    value: ""
+    value: "semann-error"
   - name: SEMANTIC_ANNOTATOR_INPUT_MONITOR_TOPIC
-    value: ""
+    value: "semann-input-monitor"
   - name: SEMANTIC_ANNOTATOR_OUTPUT_MONITOR_TOPIC
-    value: ""
+    value: "semann-output-monitor"
   - name: SEMANTIC_ANNOTATOR_OUTPUT_FORMAT
-    value: ""
+    value: "NQUADS"
   - name: MONGO_DB_URI
-    value: ""
+    value: "mongodb://data-fabric-mongodb.default.svc.cluster.local:27017"
 
 serviceAccount:
   # Specifies whether a service account should be created

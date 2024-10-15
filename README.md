@@ -1,6 +1,6 @@
-# Data Product Manager Helm Chart (WIP)
+# Data Product Manager Helm Chart
 
-## Current version: 1.2.9 (October 14th, 2024).
+## Current version: 2.1.0 (October 15th, 2024).
 
 ## Installation
 
