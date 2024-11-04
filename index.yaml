@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   data-product-manager:
   - apiVersion: v2
-    appVersion: 2.2.0
-    created: "2024-11-04T11:00:23.247887641Z"
+    appVersion: 2.3.0
+    created: "2024-11-04T13:35:26.590264142Z"
     description: Data Product Manager - A Helm Chart for Kubernetes
-    digest: f92103db423b53adffa02cf1ceb2fc0bf05db9fbf71c8914c8dd7d705f535913
+    digest: 13c857469d5ad25648c6b77316ed0818bce4812590fbf89f74fe03ab2d92ebb2
     maintainers:
     - name: Lucía Cabanillas Rodríguez
     - name: David Martínez García
@@ -14,6 +14,6 @@ entries:
     - https://github.com/candil-data-fabric/data-product-manager
     type: application
     urls:
-    - https://candil-data-fabric.github.io/data-product-manager-helm/data-product-manager-2.2.0.tgz
-    version: 2.2.0
-generated: "2024-11-04T11:00:23.243807002Z"
+    - https://candil-data-fabric.github.io/data-product-manager-helm/data-product-manager-2.3.0.tgz
+    version: 2.3.0
+generated: "2024-11-04T13:35:26.588922572Z"
