@@ -1,8 +1,19 @@
 # Data Product Manager Helm Chart
 
-## Current version: 2.2.0 (November 4th, 2024).
+## Current version: 2.3.0 (November 4th, 2024).
 
 ## Installation
+
+**Initial requirements**
+
+The Data Product Manager relies on [FluxCD](https://github.com/fluxcd/flux2) and on a custom [Kubernetes Cluster Role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) for deploying Morph-KGC jobs/instances (for batch data products). Before installing the Helm Chart, deploy the Cluster Role and FluxCD (if needed):
+
+```bash
+$ git clone https://github.com/candil-data-fabric/data-product-manager.git
+$ cd data-product-manager/kubernetes/
+$ kubectl apply -f clusterRole.yaml # For the Cluster Role
+$ kubectl apply -f fluxcd-flux2-v2.4.0.yaml # For FluxCD
+```
 
 ### Using the Helm repository hosted in GitHub Pages
 
