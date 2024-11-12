@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/candil-data-fabric/data-product-manager
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "2.4.0"
+  tag: "3.0.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -51,6 +51,10 @@ envVars:
     value: "semann-output-monitor"
   - name: SEMANTIC_ANNOTATOR_OUTPUT_FORMAT
     value: "NQUADS"
+  - name: SEMANTIC_TRANSLATOR_URI
+    value: "http://data-fabric-semantic-translator-semtrans.default.svc.cluster.local:8080/v1/"
+  - name: SEMANTIC_TRANSLATOR_SOURCE_TOPIC
+    value: "semtrans-source"
   - name: MONGO_DB_URI
     value: "mongodb://data-fabric-mongodb.default.svc.cluster.local:27017"
 
