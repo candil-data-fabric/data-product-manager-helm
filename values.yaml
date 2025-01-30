@@ -8,7 +8,7 @@ image:
   repository: ghcr.io/candil-data-fabric/data-product-manager
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "3.0.0"
+  tag: "3.1.0"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -34,7 +34,7 @@ envVars:
   - name: MORPH_CHART_NAME
     value: "morph-kgc"
   - name: MORPH_CHART_VERSION
-    value: "1.4.0"
+    value: "1.5.0"
   - name: SEMANTIC_ANNOTATOR_URI
     value: "http://data-fabric-semantic-annotator-streamer.default.svc.cluster.local:8080/"
   - name: SEMANTIC_ANNOTATOR_ERROR_TOPIC_ENABLED
@@ -84,7 +84,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: NodePort
+  type: LoadBalancer
   port: 8000
   targetPort: 8000
 
