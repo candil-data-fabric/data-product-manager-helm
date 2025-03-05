@@ -1,6 +1,6 @@
 # Data Product Manager Helm Chart
 
-## Current version: 3.3.0 (February 25th, 2025).
+## Current version: 3.3.1 (March 5th, 2025).
 
 ## Installation
 
