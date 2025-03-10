@@ -87,6 +87,7 @@ service:
   type: NodePort
   port: 8000
   targetPort: 8000
+  nodePort: 31483
 
 ingress:
   enabled: false
